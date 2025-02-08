@@ -31,9 +31,14 @@ public final float price;
         };
     }
     @Test
-    public void bunModuleTest() {
+    public void bunNameTest() {
        Bun bun = new Bun(name, price);
         Assert.assertEquals(name, bun.getName());
+    }
+
+    @Test
+    public void bunPriceTest() {
+        Bun bun = new Bun(name, price);
         Assert.assertEquals(price, bun.getPrice(), DELTA_FOR_FLOAT_ASSERT);
     }
 }

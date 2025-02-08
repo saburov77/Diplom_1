@@ -77,6 +77,13 @@ public class BurgerTest {
         burger.addIngredient(nextIngredient);
         burger.moveIngredient(1, 0);
         Assert.assertEquals(ingredientMock, burger.ingredients.get(1));
+    }
+
+    @Test
+    public void moveNextIngredientTest(){
+        Ingredient nextIngredient = mock(Ingredient.class);
+        burger.addIngredient(nextIngredient);
+        burger.moveIngredient(1, 0);
         Assert.assertEquals(nextIngredient, burger.ingredients.get(0));
     }
 }

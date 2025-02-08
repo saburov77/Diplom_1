@@ -34,10 +34,20 @@ public class IngredientTest {
     }
 
     @Test
-    public void ingredientModuleTest() {
+    public void ingredientTypeTest() {
         Ingredient ingredient = new Ingredient(type, name, price);
         Assert.assertEquals(type, ingredient.getType());
+    }
+
+    @Test
+    public void ingredientNameTest() {
+        Ingredient ingredient = new Ingredient(type, name, price);
         Assert.assertEquals(name, ingredient.getName());
+    }
+
+    @Test
+    public void ingredientPriceTest() {
+        Ingredient ingredient = new Ingredient(type, name, price);
         Assert.assertEquals(price, ingredient.getPrice(), DELTA_FOR_FLOAT_ASSERT);
     }
 }

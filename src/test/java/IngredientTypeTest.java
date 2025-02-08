@@ -27,6 +27,10 @@ public class IngredientTypeTest {
         @Test
         public void enumIngredientTypeTest() {
             Assert.assertEquals(type, IngredientType.valueOf(type).toString());
-            Assert.assertEquals(index, IngredientType.valueOf(type).ordinal());
         }
+
+        @Test
+        public void enumIngredientIndexTest() {
+            Assert.assertEquals(index, IngredientType.valueOf(type).ordinal());
+    }
 }
